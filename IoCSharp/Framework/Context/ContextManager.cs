@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 using IoCSharp.Framework.Attributes;
-using IoCSharp.Classes.Framework.Util;
+using IoCSharp.Framework.Util;
 
-namespace IoCSharp.Classes.Framework.Context
+namespace IoCSharp.Framework.Context
 {
     class ContextManager
     {

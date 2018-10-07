@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using IoCSharp.Framework.Attributes;
 
-namespace IoCSharp.Classes.Model.Repository
+namespace IoCSharp.Model.Repository
 {
     [ManagedBean(name = "clientRepository")]
     class ClientRepository : Repository<long,long>, IClientRepository

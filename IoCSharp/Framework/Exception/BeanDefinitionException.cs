@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IoCSharp.Classes.Framework.Exception
+namespace IoCSharp.Framework.Exception
 {
     class BeanDefinitionException : System.Exception
     {

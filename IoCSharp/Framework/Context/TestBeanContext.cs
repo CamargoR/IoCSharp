@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 using IoCSharp.Framework.Attributes;
-using IoCSharp.Classes.Model.Repository;
-using IoCSharp.Classes.Model.Service;
-using IoCSharp.Classes.Framework.Util;
+using IoCSharp.Model.Repository;
+using IoCSharp.Model.Service;
+using IoCSharp.Framework.Util;
 
 
-namespace IoCSharp.Classes.Framework.Context
+namespace IoCSharp.Framework.Context
 {
     class TestBeanContext
     {

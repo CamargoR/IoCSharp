@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IoCSharp.Framework.Attributes;
-using IoCSharp.Classes.Framework.Context;
-using IoCSharp.Classes.Model.Repository;
-using IoCSharp.Classes.Model.Service;
+using IoCSharp.Framework.Context;
+using IoCSharp.Model.Repository;
+using IoCSharp.Model.Service;
 
 namespace IoCSharp
 {

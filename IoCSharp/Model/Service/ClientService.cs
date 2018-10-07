@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IoCSharp.Framework.Attributes;
-using IoCSharp.Classes.Model.Repository;
+using IoCSharp.Model.Repository;
 
-namespace IoCSharp.Classes.Model.Service
+namespace IoCSharp.Model.Service
 {
     [ManagedBean(name = "clientService", singleton = false)]
     class ClientService : IClientService

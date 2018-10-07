@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IoCSharp.Classes.Framework.Util
+namespace IoCSharp.Framework.Util
 {
     class ReflectionUtil
     {

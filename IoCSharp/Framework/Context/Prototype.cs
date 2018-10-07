@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 
-namespace IoCSharp.Classes.Framework.Context
+namespace IoCSharp.Framework.Context
 {
     class Prototype<T> : Bean<T>
     {

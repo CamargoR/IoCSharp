@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using IoCSharp.Framework.Attributes;
 
-namespace IoCSharp.Classes.Model.Service
+namespace IoCSharp.Model.Service
 {
    
     class Service

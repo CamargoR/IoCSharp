@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IoCSharp.Classes.Framework.Context
+namespace IoCSharp.Framework.Context
 {
     class Singleton<T> : Bean<T> 
     {

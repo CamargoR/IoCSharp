@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using IoCSharp.Classes.Framework.Exception;
+using IoCSharp.Framework.Exception;
 
-namespace IoCSharp.Classes.Framework.Context
+namespace IoCSharp.Framework.Context
 {
     class Context
     {
