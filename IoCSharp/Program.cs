@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using IoCSharp.Framework.Attributes;
+using IoCSharp.Classes.Framework.Context;
+using IoCSharp.Classes.Model.Repository;
+using IoCSharp.Classes.Model.Service;
+
+namespace IoCSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ContextManager.CreateContext();
+
+
+            IClientRepository repo1 = ContextManager.GetBean<ClientRepository>("clientRepository");
+            IClientRepository repo2 = ContextManager.GetBean<ClientRepository>("clientRepository");
+
+            Console.WriteLine(Object.ReferenceEquals(repo1, repo2));
+
+            IClientService c1 = ContextManager.GetBean<ClientService>("clientService");
+            IClientService c2 = ContextManager.GetBean<ClientService>("clientService");
+
+            Console.WriteLine(Object.ReferenceEquals(c1, c2));
+
+
+            Console.ReadKey();
+        }
+    }
+}
