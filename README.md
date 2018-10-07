@@ -1,1 +1,1 @@
-C#ReflectionAndAttributesPractice
+A simple IoC container for C#
