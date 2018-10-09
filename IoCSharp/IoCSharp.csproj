@@ -41,26 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Framework\Attributes\Inject.cs" />
-    <Compile Include="Classes\Framework\Attributes\ManagedBean.cs" />
-    <Compile Include="Classes\Framework\Attributes\PersistenceUnit.cs" />
-    <Compile Include="Classes\Framework\Attributes\ManagedRepository.cs" />
-    <Compile Include="Classes\Framework\Attributes\ManagedService.cs" />
-    <Compile Include="Classes\Framework\Context\Bean.cs" />
-    <Compile Include="Classes\Framework\Context\Context.cs" />
-    <Compile Include="Classes\Framework\Context\ContextManager.cs" />
-    <Compile Include="Classes\Framework\Exception\BeanDefinitionException.cs" />
-    <Compile Include="Classes\Framework\Context\Prototype.cs" />
-    <Compile Include="Classes\Framework\Context\Singleton.cs" />
-    <Compile Include="Classes\Framework\Context\TestBeanContext.cs" />
-    <Compile Include="Classes\Framework\Util\ReflectionUtil.cs" />
-    <Compile Include="Classes\Model\Repository\ClientRepository.cs" />
-    <Compile Include="Classes\Model\Repository\Repository.cs" />
-    <Compile Include="Classes\Model\Service\ClientService.cs" />
-    <Compile Include="Classes\Model\Service\GenericService.cs" />
-    <Compile Include="Classes\Model\Repository\IClientRepository.cs" />
-    <Compile Include="Classes\Model\Repository\IRepository.cs" />
-    <Compile Include="Classes\Model\Service\IClientService.cs" />
+    <Compile Include="Framework\Attributes\Inject.cs" />
+    <Compile Include="Framework\Attributes\ManagedBean.cs" />
+    <Compile Include="Framework\Attributes\PersistenceUnit.cs" />
+    <Compile Include="Framework\Attributes\ManagedRepository.cs" />
+    <Compile Include="Framework\Attributes\ManagedService.cs" />
+    <Compile Include="Framework\Context\Bean.cs" />
+    <Compile Include="Framework\Context\Context.cs" />
+    <Compile Include="Framework\Context\ContextManager.cs" />
+    <Compile Include="Framework\Exception\BeanDefinitionException.cs" />
+    <Compile Include="Framework\Context\Prototype.cs" />
+    <Compile Include="Framework\Context\Singleton.cs" />
+    <Compile Include="Framework\Util\ReflectionUtil.cs" />
+    <Compile Include="Model\Repository\ClientRepository.cs" />
+    <Compile Include="Model\Repository\Repository.cs" />
+    <Compile Include="Model\Service\ClientService.cs" />
+    <Compile Include="Model\Service\GenericService.cs" />
+    <Compile Include="Model\Repository\IClientRepository.cs" />
+    <Compile Include="Model\Repository\IRepository.cs" />
+    <Compile Include="Model\Service\IClientService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,7 +67,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\Model\Beans\" />
+    <Folder Include="Model\Beans\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
