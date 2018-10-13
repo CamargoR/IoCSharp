@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IoCSharp.Framework.Exception
 {
-    class BeanDefinitionException : System.Exception
+    public class BeanDefinitionException : System.Exception
     {
         public BeanDefinitionException() {}
 

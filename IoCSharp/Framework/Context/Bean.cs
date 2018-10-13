@@ -15,7 +15,7 @@ namespace IoCSharp.Framework.Context
         protected T instance;
 
        
-        public Bean(string name, Type type)
+        protected Bean(string name, Type type)
         {
             Name = name;
             Type = type;

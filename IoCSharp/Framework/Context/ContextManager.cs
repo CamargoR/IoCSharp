@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 using System.Reflection;
 using IoCSharp.Framework.Attributes;
 using IoCSharp.Framework.Util;
+using IoCSharp.Framework.Exception;
 
 namespace IoCSharp.Framework.Context
 {
-    class ContextManager
+    static class ContextManager
     {
         private static Boolean contextCreated;
 
         public static T GetBean<T>(string name)
         {
-            return Context.Instance().GetInstance<T>(name);
+            return Context.Instance().GetInstanceFromBean<T>(name);
         }
 
         public static void CreateContext() 
@@ -26,10 +27,13 @@ namespace IoCSharp.Framework.Context
                 InjectBeans();
                 contextCreated = true;
             }
+            else
+            {
+                throw new ContextIsAlreadyCreatedException("Context is already created. Cannot create it again.");
+            }
         }
 
-
-        //---------------------------
+        #region Private methods
         private static void RegisterBeans()
         {
             foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
@@ -85,6 +89,7 @@ namespace IoCSharp.Framework.Context
                 }
             }
         }
+        #endregion
 
     }
 }

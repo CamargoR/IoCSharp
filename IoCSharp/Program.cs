@@ -15,8 +15,7 @@ namespace IoCSharp
         static void Main(string[] args)
         {
             ContextManager.CreateContext();
-
-
+            
             IClientRepository repo1 = ContextManager.GetBean<ClientRepository>("clientRepository");
             IClientRepository repo2 = ContextManager.GetBean<ClientRepository>("clientRepository");
 

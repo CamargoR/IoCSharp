@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IoCSharp.Framework.Util
 {
-    class ReflectionUtil
+    static class ReflectionUtil
     {
         public static Type MakeGenericType(Type classType, Type argumentType)
         {

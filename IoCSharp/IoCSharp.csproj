@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IoCSharp</RootNamespace>
-    <AssemblyName>ReflectionAndAttributesPractice</AssemblyName>
+    <AssemblyName>IoCSharp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -52,6 +52,8 @@
     <Compile Include="Framework\Exception\BeanDefinitionException.cs" />
     <Compile Include="Framework\Context\Prototype.cs" />
     <Compile Include="Framework\Context\Singleton.cs" />
+    <Compile Include="Framework\Exception\ContextIsAlreadyCreatedException.cs" />
+    <Compile Include="Framework\Exception\PrototypeToSingletonInjectionException.cs" />
     <Compile Include="Framework\Util\ReflectionUtil.cs" />
     <Compile Include="Model\Repository\ClientRepository.cs" />
     <Compile Include="Model\Repository\Repository.cs" />

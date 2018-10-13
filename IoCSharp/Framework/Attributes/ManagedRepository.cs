@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace IoCSharp.Framework.Attributes
 {
-    [System.AttributeUsage(System.AttributeTargets.Class)]
-    class ManagedRepository : System.Attribute
+    class ManagedRepository : ManagedBean
     {
         public string name;
     }

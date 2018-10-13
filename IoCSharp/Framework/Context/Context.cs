@@ -45,13 +45,13 @@ namespace IoCSharp.Framework.Context
             return this.beans.Values.ToList();
         }
 
-        public T GetInstance<T>(string name) 
+        public T GetInstanceFromBean<T>(string name) 
         {
             ThrowExceptionIfBeanDoesNotExist(name);
             return ((Bean<T>)GetBean(name)).Instance();
         }
 
-
+        #region Exception handling
         private void ThrowExceptionIfBeanIsAlreadyCreated(string name)
         {
             if (this.beans.ContainsKey(name))
@@ -67,5 +67,6 @@ namespace IoCSharp.Framework.Context
                 throw new BeanDefinitionException("There is not any bean named [" + name + "].");
             }
         }
+        #endregion
     }
 }
