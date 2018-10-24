@@ -33,6 +33,25 @@ namespace IoCSharp.Framework.Context
             }
         }
 
+        public static T InjectedOf<T>(Type type)
+        {
+            T injected = (T)Activator.CreateInstance(type);
+
+            FieldInfo[] fields = type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance);
+            fields.ToList().ForEach(aField => 
+            {
+                Inject injectAttribute = aField.GetCustomAttribute<Inject>();
+                if (injectAttribute != null)
+                {
+                    dynamic injectableBean = Context.Instance().GetBean(injectAttribute.injectableName);
+                    aField.SetValue(injected, injectableBean.Instance());
+                }
+            
+            });
+
+            return injected;
+        }
+
         #region Private methods
         private static void RegisterBeans()
         {

@@ -26,6 +26,9 @@ namespace IoCSharp
 
             Console.WriteLine(Object.ReferenceEquals(c1, c2));
 
+            NonBeanRepo nonBeanRepo = ContextManager.InjectedOf<NonBeanRepo>(typeof(NonBeanRepo));
+            nonBeanRepo.print();
+
 
             Console.ReadKey();
         }
