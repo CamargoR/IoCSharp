@@ -7,4 +7,4 @@ A **[ManagedBean]** is *Singleton* by default but it can be *Prototype* by setti
 
 A *Singleton* means that there's only one instance of the class in the context unlike *Prototype* which means that the context always returns a new instance.
 
-The context can only be created once otherwise an *ContextIsAlreadyCreatedException* will be thrown.
+The context can only be created once otherwise a *ContextIsAlreadyCreatedException* will be thrown.
